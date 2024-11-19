@@ -17,13 +17,17 @@ a, a:hover{
   text-decoration: none;
 }
 
-header{
-  
+
+
+
+/* footer start */
+footer{
+  background: url(../images/footer-bg.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 90px 0;
+  height: 80vh;
 }
-
-
-
-
+/* footer end */
 
 
 
