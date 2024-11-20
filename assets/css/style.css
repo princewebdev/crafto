@@ -1,3 +1,12 @@
+:root{
+  --primary-font: "Golos Text", sans-serif;
+  --secendary-font: "Plus Jakarta Sans", sans-serif;
+  --primary-color: #15161d;
+  --secondary-color: #15161d;
+  --accent-color: #7a7a83;
+  --white-color: #fff;
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -6,58 +15,259 @@
 body{
   font-size: 16px;
   line-height: 26px;
-  font-family: ;
+  font-family: var(--primary-font)
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-family: ;
+  font-family: var(--secendary-font)
 }
 
 a, a:hover{
   text-decoration: none;
 }
 
-header{
-  
+/* global css start */
+.flip-btn {
+  display: inline-block;
 }
+.flip-btn .btn-warpper{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.flip-btn .btn-warpper .btn-text{
+  overflow: hidden;
+  position: relative;
+  padding: 16px 0;
 
+}
+.flip-btn .btn-warpper .btn-text::before{
+  content: attr(hover-text);
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  transition: opacity 1s, transform 1s;
+  transition-timing-function: cubic-bezier(.15,.85,.31,1);
+  opacity: 0;
+}
+a.flip-btn:hover .btn-warpper .btn-text::before{
+  transform: translate(-50%, -220%);
+  opacity: 1;
+}
+/* global css end */
 
+/* feature start */
+.feature {
+  padding: 90px 0;
+  position: relative;
+}
+.feature .neon-one{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.feature .neon-two{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.feature .feature-text{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.feature .feature-text h5{
+  font-family: var(--primary-font);
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 25px;
+  font-weight: 700;
+  color: var(--primary-color);
+  border-radius: 50px;
+  padding: 5px 25px;
+  background: linear-gradient(to right, #ecf0f6 15%, transparent 100%);
+  width: max-content;
+}
+.feature .feature-text h2{
+  font-family: var(--secendary-font);
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 52px;
+  color: var(--primary-color);
+  color: linear-gradient(to right top, #183fb9, #4f41df, #ae2eb9, #ef3f59, #e9522d);
+}
+/* feature end */
 
+/* testimonail start */
+.testimonial {
+  padding: 90px 0;
+  background-image: linear-gradient(to top, #ffffff, #fefefe, #f3f2f8, #f3f4f9, #f4f5fa);
+}
+.testimonial .testi-head {
+  text-align: center;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.testimonial .testi-head h5{
+  font-family: var(--secendary-font);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding: 5px 30px;
+  border-radius: 50px;
+  display: inline;
+  text-indent: 25px;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #dddfeb 15%, transparent 100%);
+}
+.testimonial .testi-head h2{
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 57.6px;
+  line-height: 57.6px;
+  color: var(--primary-color);
+  text-align: center;
+}
+.testimonial .testi-box-wrapper{
+  background-color: #efeef4;
+}
+.testimonial .testimonial-box{
+  padding: 40px;
+  margin-bottom: 20px;
+  background: var(--white-color);
+  border-radius: 6px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+}
+.testimonial .testimonial-box p{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: var(--primary-font);
+  color: var(--accent-color);
+}
+.testimonial .testimonial-box p a{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.testimonial-box .testi-author h6{
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  margin: 0;
+}
+.testimonial-box .testi-author .testi-start{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+  color: #fd961e;
+}
+.testimonial .testi-btn {
+ text-align: center;
+}
+.testi-btn .flip-btn{
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 500;
+  color: var(--white-color);
+  background: var(--primary-color);
+  background-size: 200% 200%;
+  animation: footeBGgradient 10s ease infinite alternate;
+  padding: 6px 44px;
+  border-radius: 50px;
+}
+.testi-btn .flip-btn{
+  transition: ease-in-out .5s;
+}
+.testi-btn .flip-btn:hover{
+  transform: translate(0% , -5%);
+  transition: ease-in-out .5s;
+}
+/* testimonail end*/
 
+/* footer start */
+footer{
+  background: url(../images/footer-bg.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 90px 0;
+}
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.footer-content h5 {
+  font-family: var(--secendary-font);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-weight: 600;
+  color: var(--white-color);
+  padding: 5px 30px;
+  border: .8px solid var(--accent-color);
+  border-radius: 50px;
+}
+.footer-content h2 {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 70px;
+  color: var(--white-color);
+  text-align: center;
+}
+.footer-content p{
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--accent-color);
+}
+.footer-content a {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 500;
+  color: var(--white-color);
+  background: linear-gradient(60deg, #e77d13, #fa4722, #ee2370, #a23cb3, #2c5cba, #007dab);
+  background-size: 200% 200%;
+  animation: footeBGgradient 10s ease infinite alternate;
+  padding: 6px 44px;
+  border-radius: 50px;
+}
+@keyframes footeBGgradient {
+  0% {
+      background-position: 0 50%
+  }
 
+  50% {
+      background-position: 100% 50%
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  to {
+      background-position: 0 50%
+  }
+}
+.footer-content img{
+  padding-top: 50px;
+}
+/* footer end */
