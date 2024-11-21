@@ -25,10 +25,18 @@ h1, h2, h3, h4, h5, h6{
 a, a:hover{
   text-decoration: none;
 }
+ul , ol{
+  margin: 0;
+  padding: 0;
+}
+li, li:hover{
+  list-style: none;
+}
 
 /* global css start */
 .flip-btn {
   display: inline-block;
+  overflow: hidden;
 }
 .flip-btn .btn-warpper{
   display: inline-flex;
@@ -36,10 +44,9 @@ a, a:hover{
   gap: 8px;
 }
 .flip-btn .btn-warpper .btn-text{
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
-  padding: 16px 0;
-
+  /* padding: 16px 0; */
 }
 .flip-btn .btn-warpper .btn-text::before{
   content: attr(hover-text);
@@ -53,9 +60,31 @@ a, a:hover{
   transition-timing-function: cubic-bezier(.15,.85,.31,1);
   opacity: 0;
 }
+.flip-btn .btn-warpper .btn-text::after{
+  content: attr(hover-text);
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 140%);
+  white-space: nowrap;
+  transition: opacity 1s, transform 1s;
+  transition-timing-function: cubic-bezier(.15,.85,.31,1);
+  opacity: 1;
+}
+/* a.flip-btn:hover .btn-warpper .btn-text{
+  opacity: 0;
+} */
+a.flip-btn:hover .btn-warpper .btn-text::after{
+  opacity: 1 !important;
+  transform: translate(-50%, -50%);  
+  transition: opacity 1s, transform 1s;
+
+}
 a.flip-btn:hover .btn-warpper .btn-text::before{
   transform: translate(-50%, -220%);
-  opacity: 1;
+  opacity: 1 !important;
+  transition: opacity 1s, transform 1s;
 }
 /* global css end */
 
@@ -63,6 +92,7 @@ a.flip-btn:hover .btn-warpper .btn-text::before{
 .feature {
   padding: 90px 0;
   position: relative;
+  overflow: hidden;
 }
 .feature .neon-one{
   position: absolute;
@@ -98,8 +128,76 @@ a.flip-btn:hover .btn-warpper .btn-text::before{
   font-weight: 700;
   font-size: 50px;
   line-height: 52px;
+  letter-spacing: -2px;
   color: var(--primary-color);
-  color: linear-gradient(to right top, #183fb9, #4f41df, #ae2eb9, #ef3f59, #e9522d);
+  background: linear-gradient(to right top, #183fb9, #4f41df, #ae2eb9, #ef3f59, #e9522d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.feature .feature-text p{
+  font-family: var(--primary-font);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: var(--primary-color);
+  width: 70%;
+}
+.feature-btn .flip-btn{
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 500;
+  color: var(--white-color);
+  background: var(--primary-color);
+  padding: 18px 40px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.feature-btn .flip-btn{
+  transition: ease-in-out .5s;
+}
+.feature-btn .flip-btn:hover{
+  transform: translate(0% , -5%);
+  transition: ease-in-out .5s;
+}
+.feature .atropos-inner{
+  overflow: visible !important;
+}
+.feature .feature-atropos-shape {
+  transition-duration: 300ms;
+  transform: translate3d(0px, 0px, 0px);
+  position: absolute;
+  top: -150px; /* Default top value */
+  right: -150px; /* Default right value */
+  z-index: -1;
+}
+.feature .feature-menu{
+  background-color: rgba(0,0,0,.8);
+  backdrop-filter: blur(5px);
+  display: inline-block;
+  position: absolute;
+  right: -65px;
+  bottom: -32px;
+  transform: translate(-50%, -50%);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  z-index: 9;
+  border-radius: 8px;
+}
+.feature-menu ul li{
+  font-family: var(--secendary-font);
+  font-weight: 300;
+  padding: 0;
+  list-style: none;
+  color: #ffffff;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 /* feature end */
 
@@ -189,9 +287,7 @@ a.flip-btn:hover .btn-warpper .btn-text::before{
   font-weight: 500;
   color: var(--white-color);
   background: var(--primary-color);
-  background-size: 200% 200%;
-  animation: footeBGgradient 10s ease infinite alternate;
-  padding: 6px 44px;
+  padding: 18px 40px;
   border-radius: 50px;
 }
 .testi-btn .flip-btn{
@@ -251,7 +347,7 @@ footer{
   background: linear-gradient(60deg, #e77d13, #fa4722, #ee2370, #a23cb3, #2c5cba, #007dab);
   background-size: 200% 200%;
   animation: footeBGgradient 10s ease infinite alternate;
-  padding: 6px 44px;
+  padding: 24px 44px;
   border-radius: 50px;
 }
 @keyframes footeBGgradient {

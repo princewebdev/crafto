@@ -9,12 +9,16 @@
 	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
+	<!-- bootstrap icon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 	<!-- CSS here -->
       <link rel="stylesheet" href="assets/css/bootstrap.css">
       <link rel="stylesheet" href="assets/css/flaticon.css">
       <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
       <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
       <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css">
       <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -29,19 +33,48 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-5">
 					<div class="feature-text">
 						<h5>Specialized Features</h5>
 						<h2>Differentiate your website with good visual effects and animations that impress visitors.</h2>
 						<p>Incorporating animations is a highly effective technique for enhancing visitors engagement for your website.</p>
-						<!-- flip btn -->
-						<a class="flip-btn" href="#">
-							<span class="btn-warpper">
-								<span class="btn-icon"><i class="fa-solid fa-circle-arrow-down"></i></span>
-								<span class="btn-text" hover-text="More trusted customers">More trusted customers</span> 
-							</span>
-						</a>
+						<div class="feature-btn">
+							<!-- flip btn -->
+							<a class="flip-btn" href="#">
+								<span class="btn-warpper">
+									<span class="btn-icon"><i class="bi bi-megaphone"></i></span>
+									<span class="btn-text" hover-text="More trusted customers">More trusted customers</span> 
+								</span>
+							</a>
+						</div>
 					</div>
+				</div>
+				<div class="col-lg-7">
+					<!-- artrops 3d effect -->
+					<div class="atropos feature-atropos">
+						<div class="atropos-scale">
+							<div class="atropos-rotate">
+								<div class="atropos-inner">
+									<div data-atropos-offset="-1" class="feature-atropos-shape">
+										<img src="assets/images/feature-shape-bg.svg" alt="" data-no-retina="">
+									</div>
+									<img class="w-100" src="assets/images/feature-banner.webp" alt="Atropos Image" style="width: 200px;">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- feature menu -->
+					 <div class="feature-menu">
+						<ul>
+							<li>Custom cursor</li>
+							<li>On scroll animations</li>
+							<li>3D parallax hover</li>
+							<li>Adaptive background</li>
+							<li>Marquee carousel</li>
+							<li>Fancy heading / images</li>
+							<li>Motion effects</li>
+						</ul>
+					 </div>
 				</div>
 			</div>
 		</div>
@@ -222,5 +255,9 @@
 		</div>
 	 </footer>
 	<!-- footer end  -->
+
+	<!-- js linking here -->
+	<script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js"></script>
+	<script src="assets/js/script.js"></script>
 </body>
 </html>
