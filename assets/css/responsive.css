@@ -1,0 +1,651 @@
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+/******
+  * features css start here
+  ******/
+.features {
+  padding: 0 0 75px;
+}
+.features .feature-text h5{
+  margin: 0 auto;
+}
+.features .feature-text h2{
+  font-size: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+.features .feature-text p{
+  width: 100%;
+  text-align: center;
+  padding: 0 70px;
+  margin-bottom: 10px;
+}
+
+.feature-btn .btn-btns{
+  margin: 0 auto 110px;
+}
+
+.feature-btn .btn-btns a{
+  text-decoration: none;
+}
+
+.feature-btn .button-text{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 500;
+  color: var(--white-color);
+  transition: transform 0.4s ease;
+}
+
+.feature-btn .text-default{
+  transform: translateY(0);
+}
+
+.feature-btn .text-hover{
+  transform: translateY(200%);
+}
+
+.feature-btn .btn-btns:hover .text-default {
+  transform: translateY(-200%);
+}
+
+.feature-btn .btn-btns:hover .text-hover {
+  transform: translateY(0);
+}
+
+.feature-btn .btn-btns i{
+  position: absolute;
+  top: 36%;
+  left: 7%;
+  font-size: 17px;
+  line-height: 18px;
+  padding-left: 8px;
+}
+
+img[data-no-retina=""] {
+  display: block;
+}
+
+.features .atropos-inner{
+  overflow: visible !important;
+}
+.features .feature-atropos-shape {
+  transition-duration: 300ms;
+  transform: translate3d(0px, 0px, 0px);
+  position: absolute;
+  bottom: -17%;
+  right: -12%;
+  z-index: -1;
+}
+.features .feature-menu{
+  right: -45px;
+  bottom: -115px;
+  transform: translate(-50%, -50%);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  z-index: 21;
+}
+.feature-menu ul li{
+  font-size: 16px;
+  line-height: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+/******
+  * feature css end here
+  ******/
+
+
+/******
+  * testimonial css start here
+  ******/
+.testimonial {
+  padding: 75px 0;
+  background-image: linear-gradient(to top, #ffffff, #fefefe, #f3f2f8, #f3f4f9, #f4f5fa);
+}
+.testimonial .testi-head {
+  margin-bottom: 40px;
+  gap: 20px;
+}
+.testimonial .testi-head h5{
+  letter-spacing: 0;
+}
+.testimonial .testi-head h2{
+  font-size: 48px;
+  line-height: 48px;
+  margin: 0;
+}
+.testimonial .testimonial-box{
+  padding: 50px;
+  margin-bottom: 30px;
+}
+.testimonial .testimonial-box p a{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.testimonial .testi-btn .btn-btns i {
+  left: 11%;
+  top: 37%;
+}
+.testimonial-box .testi-author .testi-start{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+  color: #fd961e;
+}
+.testimonial .testi-btn {
+  padding-top: 98px;
+  margin-top: -119px;
+}
+
+.testimonial .testi-btn .btn-btns{
+  margin: 0 auto;
+  width: 300px;
+}
+
+.testimonial .testi-btn .btn-btns a{
+  text-decoration: none;
+}
+.testimonial .testi-btn .text-default{
+  transform: translateY(0);
+}
+
+.testimonial .testi-btn .text-hover{
+  transform: translateY(200%);
+}
+
+.testimonial .testi-btn .btn-btns:hover .text-default {
+  transform: translateY(-200%);
+}
+
+.testimonial .testi-btn .btn-btns:hover .text-hover {
+  transform: translateY(0);
+}
+/******
+  * testimonial css end here
+  ******/
+
+/******
+  * footer css start here
+  ******/
+  
+  footer{
+    padding: 75px 0;
+  }
+  .footer-content {
+    gap: 30px;
+    text-align: center;
+  }
+  .footer-content img {
+    padding: 32px 0 0;
+  }
+  .footer-content h5 {
+    font-size: 14px;
+  }
+  .footer-content h2 {
+    font-size: 46px;
+    line-height: 46px;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+  }
+  .footer-content p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--accent-color);
+  }
+    /******
+   * footer css end here
+   ******/
+
+  
+  
+  
+  /* media query end */
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+/******
+  * features css start here
+  ******/
+.features {
+  padding: 0 0 50px;
+}
+.features .feature-text h5{
+  margin: 0 auto;
+}
+.features .feature-text h2{
+  font-size: 38px;
+  line-height: 38px;
+  text-align: center;
+}
+.features .feature-text p{
+  width: 100%;
+  text-align: center;
+}
+
+.feature-btn .btn-btns{
+  margin: 0 auto 80px;
+}
+
+.feature-btn .btn-btns a{
+  text-decoration: none;
+}
+
+.feature-btn .button-text{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 500;
+  color: var(--white-color);
+  transition: transform 0.4s ease;
+}
+
+.feature-btn .text-default{
+  transform: translateY(0);
+}
+
+.feature-btn .text-hover{
+  transform: translateY(200%);
+}
+
+.feature-btn .btn-btns:hover .text-default {
+  transform: translateY(-200%);
+}
+
+.feature-btn .btn-btns:hover .text-hover {
+  transform: translateY(0);
+}
+
+.feature-btn .btn-btns i{
+  position: absolute;
+  top: 36%;
+  left: 7%;
+  font-size: 17px;
+  line-height: 18px;
+  padding-left: 8px;
+}
+
+img[data-no-retina=""] { 
+  display: none; 
+}
+
+.features .atropos-inner{
+  overflow: visible !important;
+}
+.features .feature-atropos-shape {
+  transition-duration: 300ms;
+  transform: translate3d(0px, 0px, 0px);
+  position: absolute;
+  bottom: -17%;
+  right: -12%;
+  z-index: -1;
+}
+.features .feature-menu{
+  right: -88px;
+  bottom: -130px;
+  transform: translate(-50%, -50%);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  z-index: 21;
+}
+.feature-menu ul li{
+  font-size: 14px;
+  line-height: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+/******
+  * feature css end here
+  ******/
+
+
+/******
+  * testimonial css start here
+  ******/
+.testimonial {
+  padding: 50px 0;
+  background-image: linear-gradient(to top, #ffffff, #fefefe, #f3f2f8, #f3f4f9, #f4f5fa);
+}
+.testimonial .testi-head {
+  margin-bottom: 20px;
+  gap: 0;
+}
+.testimonial .testi-head h5{
+  letter-spacing: 0;
+}
+.testimonial .testi-head h2{
+  font-size: 42px;
+  line-height: 42px;
+  margin: 0;
+}
+.testimonial .testimonial-box{
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.testimonial .testimonial-box p a{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.testimonial .testi-btn .btn-btns i {
+  left: 11%;
+  top: 37%;
+}
+.testimonial-box .testi-author .testi-start{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+  color: #fd961e;
+}
+.testimonial .testi-btn {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+.testimonial .testi-btn .btn-btns{
+  margin: 0 auto;
+  width: 300px;
+}
+
+.testimonial .testi-btn .btn-btns a{
+  text-decoration: none;
+}
+.testimonial .testi-btn .text-default{
+  transform: translateY(0);
+}
+
+.testimonial .testi-btn .text-hover{
+  transform: translateY(200%);
+}
+
+.testimonial .testi-btn .btn-btns:hover .text-default {
+  transform: translateY(-200%);
+}
+
+.testimonial .testi-btn .btn-btns:hover .text-hover {
+  transform: translateY(0);
+}
+/******
+  * testimonial css end here
+  ******/
+
+/******
+  * footer css start here
+  ******/
+  
+  footer{
+    padding: 50px 0;
+  }
+  .footer-content { 
+    gap: 25px; 
+    text-align: center; 
+  }
+  .footer-content img { 
+    padding: 15px; 
+  }
+  .footer-content h5 {
+    font-size: 12px;
+  }
+  .footer-content h2 {
+    font-size: 42px;
+    line-height: 42px;
+    padding: 0;
+    text-align: center;
+  }
+  .footer-content p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    color: var(--accent-color);
+  }
+    /******
+   * footer css end here
+   ******/
+
+  
+  
+  
+  /* media query end */
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+/******
+  * features css start here
+  ******/
+.features {
+  padding: 50px 0;
+}
+.features .feature-text h5{
+  margin: 0 auto;
+}
+.features .feature-text h2{
+  font-size: 42px;
+  line-height: 42px;
+  text-align: center;
+}
+.features .feature-text p{
+  width: 100%;
+  text-align: center;
+}
+
+.feature-btn .btn-btns{
+  margin: 0 auto 50px;
+}
+
+.feature-btn .btn-btns a{
+  text-decoration: none;
+}
+
+.feature-btn .button-text{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 500;
+  color: var(--white-color);
+  transition: transform 0.4s ease;
+}
+
+.feature-btn .text-default{
+  transform: translateY(0);
+}
+
+.feature-btn .text-hover{
+  transform: translateY(200%);
+}
+
+.feature-btn .btn-btns:hover .text-default {
+  transform: translateY(-200%);
+}
+
+.feature-btn .btn-btns:hover .text-hover {
+  transform: translateY(0);
+}
+
+.feature-btn .btn-btns i{
+  position: absolute;
+  top: 36%;
+  left: 7%;
+  font-size: 17px;
+  line-height: 18px;
+  padding-left: 8px;
+}
+
+img[data-no-retina=""] { 
+  display: none; 
+}
+
+.features .atropos-inner{
+  overflow: visible !important;
+}
+.features .feature-atropos-shape {
+  transition-duration: 300ms;
+  transform: translate3d(0px, 0px, 0px);
+  position: absolute;
+  bottom: -17%;
+  right: -12%;
+  z-index: -1;
+}
+.features .feature-menu{
+  right: -84px;
+  bottom: -112px;
+  transform: translate(-50%, -50%);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  z-index: 9;
+}
+.feature-menu ul li{
+  font-size: 14px;
+  line-height: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+/******
+  * feature css end here
+  ******/
+
+
+/******
+  * testimonial css start here
+  ******/
+.testimonial {
+  padding: 50px 0;
+  background-image: linear-gradient(to top, #ffffff, #fefefe, #f3f2f8, #f3f4f9, #f4f5fa);
+}
+.testimonial .testi-head {
+  margin-bottom: 20px;
+}
+.testimonial .testi-head h5{
+  letter-spacing: 0;
+}
+.testimonial .testi-head h2{
+  font-size: 42px;
+  line-height: 42px;
+  margin: 0;
+}
+.testimonial .testimonial-box{
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.testimonial .testimonial-box p a{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.testimonial-box .testi-author .testi-start{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+  color: #fd961e;
+}
+.testimonial .testi-btn {
+  padding-top: 100px;
+  margin-top: -200px;
+}
+.testimonial .testi-btn .btn-btns i { 
+  left: 12%; 
+}
+.testimonial .testi-btn .btn-btns{
+  margin: 0 auto;
+}
+
+.testimonial .testi-btn .btn-btns a{
+  text-decoration: none;
+}
+.testimonial .testi-btn .text-default{
+  transform: translateY(0);
+}
+
+.testimonial .testi-btn .text-hover{
+  transform: translateY(200%);
+}
+
+.testimonial .testi-btn .btn-btns:hover .text-default {
+  transform: translateY(-200%);
+}
+
+.testimonial .testi-btn .btn-btns:hover .text-hover {
+  transform: translateY(0);
+}
+/******
+  * testimonial css end here
+  ******/
+
+/******
+  * footer css start here
+  ******/
+  
+  footer{
+    padding: 50px 0;
+  }
+  .footer-content h5 {
+    font-size: 12px;
+  }
+  .footer-content h2 {
+    font-size: 42px;
+    line-height: 42px;
+    padding: 0;
+  }
+  .footer-content p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--accent-color);
+  }
+    /******
+   * footer css end here
+   ******/
+
+  
+  
+  
+  /* media query end */
+}
